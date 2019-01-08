@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Cotizaciones
 {
-    public partial class Form1 : Form
+    public partial class frmInicioSecion : Form
     {
-        public Form1()
+        public frmInicioSecion()
         {
             InitializeComponent();
         }
