@@ -1,0 +1,14 @@
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\bin\Debug\Cotizaciones.exe.config
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\bin\Debug\Cotizaciones.exe
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\bin\Debug\Cotizaciones.pdb
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.csprojAssemblyReference.cache
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmInicioSecion.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmPantallaPrincipal.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.Properties.Resources.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.csproj.GenerateResource.cache
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.csproj.CoreCompileInputs.cache
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.exe
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.pdb
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\bin\Debug\Microsoft.VisualBasic.PowerPacks.dll
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.csproj.CopyComplete
