@@ -34,11 +34,12 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
+            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.lineShape1 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.txtContraseña = new System.Windows.Forms.TextBox();
-            this.lineShape2 = new Microsoft.VisualBasic.PowerPacks.LineShape();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
+            this.llblRegistro = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -51,7 +52,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Segoe UI Emoji", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(167, 135);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(304, 35);
             this.txtUsuario.TabIndex = 0;
@@ -66,7 +67,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogin.Location = new System.Drawing.Point(232, 307);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(156, 37);
             this.btnLogin.TabIndex = 2;
@@ -107,6 +108,15 @@
             this.shapeContainer1.TabIndex = 6;
             this.shapeContainer1.TabStop = false;
             // 
+            // lineShape2
+            // 
+            this.lineShape2.BorderWidth = 3;
+            this.lineShape2.Name = "lineShape2";
+            this.lineShape2.X1 = 165;
+            this.lineShape2.X2 = 165;
+            this.lineShape2.Y1 = 202;
+            this.lineShape2.Y2 = 236;
+            // 
             // lineShape1
             // 
             this.lineShape1.BorderWidth = 3;
@@ -141,15 +151,6 @@
             this.txtContraseña.Text = "CONTRASEÑA";
             this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // lineShape2
-            // 
-            this.lineShape2.BorderWidth = 3;
-            this.lineShape2.Name = "lineShape2";
-            this.lineShape2.X1 = 165;
-            this.lineShape2.X2 = 165;
-            this.lineShape2.Y1 = 202;
-            this.lineShape2.Y2 = 236;
-            // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
@@ -163,11 +164,26 @@
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "¿Olvidaste contraseña?";
             // 
+            // llblRegistro
+            // 
+            this.llblRegistro.AutoSize = true;
+            this.llblRegistro.BackColor = System.Drawing.Color.Transparent;
+            this.llblRegistro.Font = new System.Drawing.Font("Segoe UI", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.llblRegistro.LinkColor = System.Drawing.Color.Navy;
+            this.llblRegistro.Location = new System.Drawing.Point(12, 365);
+            this.llblRegistro.Name = "llblRegistro";
+            this.llblRegistro.Size = new System.Drawing.Size(68, 20);
+            this.llblRegistro.TabIndex = 11;
+            this.llblRegistro.TabStop = true;
+            this.llblRegistro.Text = "Registro";
+            this.llblRegistro.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.llblRegistro_LinkClicked);
+            // 
             // frmInicioSecion
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(591, 391);
+            this.Controls.Add(this.llblRegistro);
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtContraseña);
@@ -177,7 +193,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicioSecion";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -203,5 +219,6 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.TextBox txtContraseña;
         private System.Windows.Forms.LinkLabel linkLabel1;
+        private System.Windows.Forms.LinkLabel llblRegistro;
     }
 }
