@@ -51,12 +51,8 @@
             this.txtUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
-<<<<<<< HEAD
-            this.txtUsuario.Location = new System.Drawing.Point(125, 110);
-=======
             this.txtUsuario.Location = new System.Drawing.Point(167, 135);
             this.txtUsuario.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 79eb48dce6fb9da00f2e479a35f37445ecc16dd2
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(228, 25);
             this.txtUsuario.TabIndex = 0;
@@ -70,12 +66,8 @@
             this.btnLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-<<<<<<< HEAD
-            this.btnLogin.Location = new System.Drawing.Point(174, 249);
-=======
             this.btnLogin.Location = new System.Drawing.Point(232, 307);
             this.btnLogin.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 79eb48dce6fb9da00f2e479a35f37445ecc16dd2
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(117, 30);
             this.btnLogin.TabIndex = 2;
@@ -193,12 +185,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-<<<<<<< HEAD
-            this.ClientSize = new System.Drawing.Size(443, 318);
-=======
             this.ClientSize = new System.Drawing.Size(591, 391);
             this.Controls.Add(this.llblRegistro);
->>>>>>> 79eb48dce6fb9da00f2e479a35f37445ecc16dd2
             this.Controls.Add(this.linkLabel1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.txtContraseña);
@@ -208,10 +196,8 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
-=======
+
             this.Margin = new System.Windows.Forms.Padding(4);
->>>>>>> 79eb48dce6fb9da00f2e479a35f37445ecc16dd2
             this.Name = "frmInicioSecion";
             this.Opacity = 0.95D;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
