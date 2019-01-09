@@ -10,30 +10,25 @@ using System.Windows.Forms;
 
 namespace Cotizaciones
 {
-    public partial class frmInicioSecion : Form
+    public partial class RegistroUsuario : Form
     {
-        public frmInicioSecion()
+        public RegistroUsuario()
         {
             InitializeComponent();
             //Se toma direccion de la imagen de fondo llamado Login
-            Bitmap Imagenes = new Bitmap(Application.StartupPath + @"/Imagenes/Login.jpeg");
+            Bitmap Imagenes = new Bitmap(Application.StartupPath + @"/Imagenes/Register.jpg");
             //Se pide que la añada como imagen de fondo para esta forma.
             this.BackgroundImage = Imagenes;
         }
 
-        private void frmInicioSecion_Load(object sender, EventArgs e)
+        private void RegistroUsuario_Load(object sender, EventArgs e)
         {
 
         }
-            
-        private void llblRegistro_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+
+        private void label4_Click(object sender, EventArgs e)
         {
-            this.Hide();
 
-            RegistroUsuario frm = new RegistroUsuario();
-
-            frm.Show();
         }
-
     }
 }
