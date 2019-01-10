@@ -134,13 +134,8 @@
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.Navy;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-<<<<<<< HEAD
-            this.pictureBox3.Location = new System.Drawing.Point(95, 164);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-=======
             this.pictureBox3.Location = new System.Drawing.Point(183, 263);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
->>>>>>> 59e12b0fe61426560b29acd7b3b29ed443f18088
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(37, 31);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -206,11 +201,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-<<<<<<< HEAD
-            this.Margin = new System.Windows.Forms.Padding(4);
-=======
             this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
->>>>>>> 59e12b0fe61426560b29acd7b3b29ed443f18088
             this.Name = "frmInicioSecion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInicioSecion";
