@@ -28,3 +28,6 @@ D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Coti
 D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmPruebas.resources
 C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.RegistroUsuario.resources
 D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.RegistroUsuario.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmPruebas.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmSolicitudes.resources
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmRequisicion.resources

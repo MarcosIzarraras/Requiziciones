@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtApellidos = new System.Windows.Forms.TextBox();
+            this.txtNumeroEmpleado = new System.Windows.Forms.TextBox();
             this.cmbDepartamento = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cmbArea = new System.Windows.Forms.ComboBox();
+            this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -44,7 +44,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.btnCancelar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +55,7 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(256, 49);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(111, 37);
+            this.label1.Size = new System.Drawing.Size(106, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "SIGN IN";
             // 
@@ -79,29 +79,29 @@
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(206, 42);
             // 
-            // textBox1
+            // txtNombre
             // 
-            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(99, 186);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(174, 37);
-            this.textBox1.TabIndex = 2;
+            this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNombre.Location = new System.Drawing.Point(99, 186);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(174, 37);
+            this.txtNombre.TabIndex = 2;
             // 
-            // textBox2
+            // txtApellidos
             // 
-            this.textBox2.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(395, 186);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(219, 37);
-            this.textBox2.TabIndex = 3;
+            this.txtApellidos.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtApellidos.Location = new System.Drawing.Point(395, 186);
+            this.txtApellidos.Name = "txtApellidos";
+            this.txtApellidos.Size = new System.Drawing.Size(219, 37);
+            this.txtApellidos.TabIndex = 3;
             // 
-            // textBox3
+            // txtNumeroEmpleado
             // 
-            this.textBox3.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(99, 268);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(174, 37);
-            this.textBox3.TabIndex = 4;
+            this.txtNumeroEmpleado.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNumeroEmpleado.Location = new System.Drawing.Point(99, 268);
+            this.txtNumeroEmpleado.Name = "txtNumeroEmpleado";
+            this.txtNumeroEmpleado.Size = new System.Drawing.Size(174, 37);
+            this.txtNumeroEmpleado.TabIndex = 4;
             // 
             // cmbDepartamento
             // 
@@ -120,12 +120,12 @@
             this.cmbDepartamento.Size = new System.Drawing.Size(219, 38);
             this.cmbDepartamento.TabIndex = 5;
             // 
-            // comboBox1
+            // cmbArea
             // 
-            this.comboBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox1.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbArea.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbArea.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbArea.FormattingEnabled = true;
+            this.cmbArea.Items.AddRange(new object[] {
             "MANTENIMIENTO PLANTA",
             "MANTENIMIENTO CONNECTIC",
             "INSPECCION",
@@ -137,25 +137,25 @@
             "ENVIOS",
             "RECIBOS",
             "PRODUCCION"});
-            this.comboBox1.Location = new System.Drawing.Point(99, 361);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(174, 38);
-            this.comboBox1.TabIndex = 6;
+            this.cmbArea.Location = new System.Drawing.Point(99, 361);
+            this.cmbArea.Name = "cmbArea";
+            this.cmbArea.Size = new System.Drawing.Size(174, 38);
+            this.cmbArea.TabIndex = 6;
             // 
-            // comboBox2
+            // cmbTipoUsuario
             // 
-            this.comboBox2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.comboBox2.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.cmbTipoUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.cmbTipoUsuario.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbTipoUsuario.FormattingEnabled = true;
+            this.cmbTipoUsuario.Items.AddRange(new object[] {
             "COMPRADOR",
             "SOLICITANTE",
             "APROBADOR 1",
             "APROBADOR 2 "});
-            this.comboBox2.Location = new System.Drawing.Point(395, 361);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(219, 38);
-            this.comboBox2.TabIndex = 7;
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(395, 361);
+            this.cmbTipoUsuario.Name = "cmbTipoUsuario";
+            this.cmbTipoUsuario.Size = new System.Drawing.Size(219, 38);
+            this.cmbTipoUsuario.TabIndex = 7;
             // 
             // label2
             // 
@@ -238,25 +238,26 @@
             this.btnGuardar.Text = "SAVE";
             this.btnGuardar.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnCancelar
             // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(375, 481);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(103, 39);
-            this.button2.TabIndex = 15;
-            this.button2.Text = "CANCEL";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(193)))), ((int)(((byte)(0)))), ((int)(((byte)(4)))));
+            this.btnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnCancelar.Font = new System.Drawing.Font("Segoe UI", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelar.ForeColor = System.Drawing.Color.White;
+            this.btnCancelar.Location = new System.Drawing.Point(375, 481);
+            this.btnCancelar.Name = "btnCancelar";
+            this.btnCancelar.Size = new System.Drawing.Size(103, 39);
+            this.btnCancelar.TabIndex = 15;
+            this.btnCancelar.Text = "CANCEL";
+            this.btnCancelar.UseVisualStyleBackColor = false;
             // 
             // RegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(626, 551);
-            this.Controls.Add(this.button2);
+            this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -264,12 +265,12 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.comboBox2);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbTipoUsuario);
+            this.Controls.Add(this.cmbArea);
             this.Controls.Add(this.cmbDepartamento);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtNumeroEmpleado);
+            this.Controls.Add(this.txtApellidos);
+            this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
@@ -287,12 +288,12 @@
         private System.Windows.Forms.Label label1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txtNombre;
+        private System.Windows.Forms.TextBox txtApellidos;
+        private System.Windows.Forms.TextBox txtNumeroEmpleado;
         private System.Windows.Forms.ComboBox cmbDepartamento;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox cmbArea;
+        private System.Windows.Forms.ComboBox cmbTipoUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
@@ -300,6 +301,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnGuardar;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnCancelar;
     }
 }

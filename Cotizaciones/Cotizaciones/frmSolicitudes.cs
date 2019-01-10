@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Cotizaciones
 {
-    public partial class frmPantallaPrincipal : Form
+    public partial class frmSolicitudes : Form
     {
-        public frmPantallaPrincipal()
+        public frmSolicitudes()
         {
             InitializeComponent();
-        }
-
-        private void chaGrafica_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }
