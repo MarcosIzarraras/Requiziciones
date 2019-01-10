@@ -17,7 +17,7 @@ CREATE TABLE Usuario
 	usu_id INT IDENTITY(1,1) PRIMARY KEY,
 	usu_nombre VARCHAR(300),
 	usu_apellido VARCHAR(300),
-	usu_usuario VARCHAR(50),
+	usu_usuario VARCHAR(50) UNIQUE,
 	usu_contrasenia VARCHAR(50),
 	usu_numeroEmpleado INT,
 	usu_tipoUsuario_id INT FOREIGN KEY REFERENCES TipoUsuario(tusu_id),

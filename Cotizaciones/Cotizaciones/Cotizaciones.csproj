@@ -75,6 +75,7 @@
     <Compile Include="RegistroUsuario.Designer.cs">
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
+    <Compile Include="Secion.cs" />
     <EmbeddedResource Include="frmInicioSecion.resx">
       <DependentUpon>frmInicioSecion.cs</DependentUpon>
     </EmbeddedResource>

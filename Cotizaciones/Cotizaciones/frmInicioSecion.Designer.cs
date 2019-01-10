@@ -56,6 +56,7 @@
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(228, 25);
             this.txtUsuario.TabIndex = 0;
+            this.txtUsuario.Tag = "USUARIO";
             this.txtUsuario.Text = "USUARIO";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -73,13 +74,14 @@
             this.btnLogin.TabIndex = 2;
             this.btnLogin.Text = "LOGIN";
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
             this.pictureBox1.Location = new System.Drawing.Point(174, 10);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(103, 84);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -91,7 +93,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Navy;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(95, 110);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(28, 25);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,7 +108,7 @@
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.lineShape2,
             this.lineShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(443, 318);
+            this.shapeContainer1.Size = new System.Drawing.Size(591, 391);
             this.shapeContainer1.TabIndex = 6;
             this.shapeContainer1.TabStop = false;
             // 
@@ -133,7 +135,7 @@
             this.pictureBox3.BackColor = System.Drawing.Color.Navy;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(95, 164);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(28, 25);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -150,8 +152,10 @@
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(228, 25);
             this.txtContraseña.TabIndex = 7;
+            this.txtContraseña.Tag = "CONTRASEÑA";
             this.txtContraseña.Text = "CONTRASEÑA";
             this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtContraseña.UseSystemPasswordChar = true;
             // 
             // linkLabel1
             // 
@@ -175,7 +179,7 @@
             this.llblRegistro.LinkColor = System.Drawing.Color.Navy;
             this.llblRegistro.Location = new System.Drawing.Point(12, 365);
             this.llblRegistro.Name = "llblRegistro";
-            this.llblRegistro.Size = new System.Drawing.Size(68, 20);
+            this.llblRegistro.Size = new System.Drawing.Size(54, 15);
             this.llblRegistro.TabIndex = 11;
             this.llblRegistro.TabStop = true;
             this.llblRegistro.Text = "Registro";
@@ -196,7 +200,6 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmInicioSecion";
             this.Opacity = 0.95D;
