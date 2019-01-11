@@ -237,6 +237,7 @@
             this.btnGuardar.TabIndex = 14;
             this.btnGuardar.Text = "SAVE";
             this.btnGuardar.UseVisualStyleBackColor = false;
+            this.btnGuardar.Click += new System.EventHandler(this.btnGuardar_Click);
             // 
             // btnCancelar
             // 

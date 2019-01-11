@@ -52,7 +52,7 @@
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtUsuario.ForeColor = System.Drawing.Color.White;
             this.txtUsuario.Location = new System.Drawing.Point(223, 166);
-            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.txtUsuario.Margin = new System.Windows.Forms.Padding(5);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(304, 30);
             this.txtUsuario.TabIndex = 0;
@@ -68,7 +68,7 @@
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI Semibold", 11.89565F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btnLogin.Location = new System.Drawing.Point(294, 342);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(5);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(156, 37);
             this.btnLogin.TabIndex = 2;
@@ -149,7 +149,7 @@
             this.txtContraseña.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.27826F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtContraseña.ForeColor = System.Drawing.Color.White;
             this.txtContraseña.Location = new System.Drawing.Point(223, 263);
-            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtContraseña.Margin = new System.Windows.Forms.Padding(4);
             this.txtContraseña.Name = "txtContraseña";
             this.txtContraseña.Size = new System.Drawing.Size(304, 30);
             this.txtContraseña.TabIndex = 7;
@@ -157,6 +157,7 @@
             this.txtContraseña.Text = "CONTRASEÑA";
             this.txtContraseña.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.txtContraseña.UseSystemPasswordChar = true;
+            
             // 
             // linkLabel1
             // 
@@ -180,7 +181,7 @@
             this.llblRegistro.Location = new System.Drawing.Point(16, 449);
             this.llblRegistro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.llblRegistro.Name = "llblRegistro";
-            this.llblRegistro.Size = new System.Drawing.Size(54, 15);
+            this.llblRegistro.Size = new System.Drawing.Size(68, 20);
             this.llblRegistro.TabIndex = 11;
             this.llblRegistro.TabStop = true;
             this.llblRegistro.Text = "Registro";
@@ -201,7 +202,7 @@
             this.Controls.Add(this.txtUsuario);
             this.Controls.Add(this.shapeContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.Margin = new System.Windows.Forms.Padding(5);
             this.Name = "frmInicioSecion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmInicioSecion";
