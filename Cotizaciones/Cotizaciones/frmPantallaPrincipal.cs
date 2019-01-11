@@ -21,5 +21,12 @@ namespace Cotizaciones
         {
 
         }
+
+        private void crearSoicitudToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmSolicitudes solicitud = new frmSolicitudes();
+            solicitud.Visible = true;
+            this.Close();
+        }
     }
 }

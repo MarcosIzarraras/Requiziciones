@@ -50,6 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Conexion.cs" />
+    <Compile Include="Departamento.cs" />
     <Compile Include="frmInicioSecion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +90,7 @@
       <DependentUpon>RegistroUsuario.cs</DependentUpon>
     </Compile>
     <Compile Include="Secion.cs" />
+    <Compile Include="Solicitud.cs" />
     <EmbeddedResource Include="frmInicioSecion.resx">
       <DependentUpon>frmInicioSecion.cs</DependentUpon>
     </EmbeddedResource>
