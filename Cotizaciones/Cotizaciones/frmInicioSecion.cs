@@ -69,5 +69,6 @@ namespace Cotizaciones
                 cajaActual.Text = cajaActual.Tag.ToString();
             }
         }
+
     }
 }
