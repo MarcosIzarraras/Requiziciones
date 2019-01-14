@@ -15,5 +15,10 @@ namespace Cotizaciones
             DataRow registro = Conexion.LeerRegistro("SELECT dpto_nombre FROM Departamento WHERE dpto_id = " + id + "");
             nombre = registro.ItemArray[0].ToString();
         }
+        public static DataTable obtenerDepartamentos()
+        {
+           return Conexion.LeerTabla("select *from departamento");
+        }
+           
     }
 }
