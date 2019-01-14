@@ -84,3 +84,11 @@ CREATE TABLE DetalleCotizacion
 	dcot_subTotal DECIMAL(10, 4),
 	dcot_cotizacion_id INT FOREIGN KEY REFERENCES Cotizacion(cot_id)
 )
+
+CREATE TABLE tipoPedido
+(
+	tPed_id INT IDENTITY (1,1) PRIMARY KEY,
+	tPed_nombre VARCHAR(500)
+)
+
+INSERT INTO tipoPedido VALUES ('Fixura'), ('General')

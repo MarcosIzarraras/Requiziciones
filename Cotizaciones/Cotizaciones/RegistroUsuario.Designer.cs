@@ -35,16 +35,18 @@
             this.txtApellidos = new System.Windows.Forms.TextBox();
             this.txtNumeroEmpleado = new System.Windows.Forms.TextBox();
             this.cmbDepartamento = new System.Windows.Forms.ComboBox();
-            this.cmbArea = new System.Windows.Forms.ComboBox();
             this.cmbTipoUsuario = new System.Windows.Forms.ComboBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.btnCancelar = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtContraseña = new System.Windows.Forms.TextBox();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -66,7 +68,7 @@
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
             this.rectangleShape1});
-            this.shapeContainer1.Size = new System.Drawing.Size(626, 551);
+            this.shapeContainer1.Size = new System.Drawing.Size(660, 550);
             this.shapeContainer1.TabIndex = 1;
             this.shapeContainer1.TabStop = false;
             // 
@@ -82,7 +84,7 @@
             // txtNombre
             // 
             this.txtNombre.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtNombre.Location = new System.Drawing.Point(99, 186);
+            this.txtNombre.Location = new System.Drawing.Point(99, 135);
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(174, 37);
             this.txtNombre.TabIndex = 2;
@@ -90,7 +92,7 @@
             // txtApellidos
             // 
             this.txtApellidos.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtApellidos.Location = new System.Drawing.Point(395, 186);
+            this.txtApellidos.Location = new System.Drawing.Point(405, 135);
             this.txtApellidos.Name = "txtApellidos";
             this.txtApellidos.Size = new System.Drawing.Size(219, 37);
             this.txtApellidos.TabIndex = 3;
@@ -115,32 +117,10 @@
             "PRODUCCION",
             "MATERIALES",
             "RH"});
-            this.cmbDepartamento.Location = new System.Drawing.Point(395, 268);
+            this.cmbDepartamento.Location = new System.Drawing.Point(405, 268);
             this.cmbDepartamento.Name = "cmbDepartamento";
             this.cmbDepartamento.Size = new System.Drawing.Size(219, 38);
             this.cmbDepartamento.TabIndex = 5;
-            // 
-            // cmbArea
-            // 
-            this.cmbArea.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cmbArea.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cmbArea.FormattingEnabled = true;
-            this.cmbArea.Items.AddRange(new object[] {
-            "MANTENIMIENTO PLANTA",
-            "MANTENIMIENTO CONNECTIC",
-            "INSPECCION",
-            "PROCESO",
-            "MANUFACTURA",
-            "TOOL CRIB",
-            "COMPRAS",
-            "ALMACEN",
-            "ENVIOS",
-            "RECIBOS",
-            "PRODUCCION"});
-            this.cmbArea.Location = new System.Drawing.Point(99, 361);
-            this.cmbArea.Name = "cmbArea";
-            this.cmbArea.Size = new System.Drawing.Size(174, 38);
-            this.cmbArea.TabIndex = 6;
             // 
             // cmbTipoUsuario
             // 
@@ -152,7 +132,7 @@
             "SOLICITANTE",
             "APROBADOR 1",
             "APROBADOR 2 "});
-            this.cmbTipoUsuario.Location = new System.Drawing.Point(395, 361);
+            this.cmbTipoUsuario.Location = new System.Drawing.Point(290, 358);
             this.cmbTipoUsuario.Name = "cmbTipoUsuario";
             this.cmbTipoUsuario.Size = new System.Drawing.Size(219, 38);
             this.cmbTipoUsuario.TabIndex = 7;
@@ -162,7 +142,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 190);
+            this.label2.Location = new System.Drawing.Point(4, 139);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(94, 30);
             this.label2.TabIndex = 8;
@@ -173,7 +153,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(285, 189);
+            this.label3.Location = new System.Drawing.Point(295, 138);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(102, 30);
             this.label3.TabIndex = 9;
@@ -196,33 +176,11 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(288, 271);
+            this.label5.Location = new System.Drawing.Point(298, 271);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(78, 30);
             this.label5.TabIndex = 11;
             this.label5.Text = "Depto.";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.BackColor = System.Drawing.Color.Transparent;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(18, 364);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(58, 30);
-            this.label6.TabIndex = 12;
-            this.label6.Text = "Area";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.BackColor = System.Drawing.Color.Transparent;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(288, 364);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(98, 30);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Tipo Usu";
             // 
             // btnGuardar
             // 
@@ -252,22 +210,73 @@
             this.btnCancelar.Text = "CANCEL";
             this.btnCancelar.UseVisualStyleBackColor = false;
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(149, 361);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(98, 30);
+            this.label6.TabIndex = 13;
+            this.label6.Text = "Tipo Usu";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.BackColor = System.Drawing.Color.Transparent;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(278, 208);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(122, 30);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Contraseña";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.BackColor = System.Drawing.Color.Transparent;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 13.14783F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(4, 209);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(86, 30);
+            this.label8.TabIndex = 18;
+            this.label8.Text = "Usuario";
+            // 
+            // txtContraseña
+            // 
+            this.txtContraseña.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtContraseña.Location = new System.Drawing.Point(405, 205);
+            this.txtContraseña.Name = "txtContraseña";
+            this.txtContraseña.Size = new System.Drawing.Size(219, 37);
+            this.txtContraseña.TabIndex = 17;
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 13.77391F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtUsuario.Location = new System.Drawing.Point(99, 205);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(174, 37);
+            this.txtUsuario.TabIndex = 16;
+            // 
             // RegistroUsuario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(626, 551);
+            this.ClientSize = new System.Drawing.Size(660, 550);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.txtContraseña);
+            this.Controls.Add(this.txtUsuario);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnCancelar);
             this.Controls.Add(this.btnGuardar);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cmbTipoUsuario);
-            this.Controls.Add(this.cmbArea);
             this.Controls.Add(this.cmbDepartamento);
             this.Controls.Add(this.txtNumeroEmpleado);
             this.Controls.Add(this.txtApellidos);
@@ -293,15 +302,17 @@
         private System.Windows.Forms.TextBox txtApellidos;
         private System.Windows.Forms.TextBox txtNumeroEmpleado;
         private System.Windows.Forms.ComboBox cmbDepartamento;
-        private System.Windows.Forms.ComboBox cmbArea;
         private System.Windows.Forms.ComboBox cmbTipoUsuario;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnGuardar;
         private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtContraseña;
+        private System.Windows.Forms.TextBox txtUsuario;
     }
 }

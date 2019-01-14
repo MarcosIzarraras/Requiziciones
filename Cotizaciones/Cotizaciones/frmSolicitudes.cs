@@ -32,15 +32,31 @@ namespace Cotizaciones
         }
         private void cargarDatosDefault()
         {
+            //DATOSO USUARIO
             Departamento departamento = new Departamento(Secion.departamento);
             lblNumeroEmpleado.Text = Secion.numeroEmpleado.ToString();
             lblSolicitante.Text = Secion.nombre;
             lblDepartamento.Text = departamento.nombre;
+
+            //CARGAMOS PEDIDO
+            cmbTipoPedido.DisplayMember = "tPed_nombre";
+            cmbTipoPedido.ValueMember = "tPed_id";
+            cmbTipoPedido.DataSource = TipoDePedidos.obtenerDatosPedido();
+
+            //CARGAMOS COMPRADORES
+            cmbComprador.DisplayMember = "usu_id";
+            cmbComprador.ValueMember = "usu_usuario";
+            cmbComprador.DataSource = new Usuario().obtenerCompradores(); 
         }
 
         private void frmSolicitudes_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
