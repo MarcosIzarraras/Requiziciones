@@ -41,8 +41,8 @@ namespace Cotizaciones
             usuario.usuario = txtUsuario.Text;
             usuario.contraseña = txtContraseña.Text;
             usuario.numeroEmpleado = Convert.ToInt32(txtNumeroEmpleado.Text);
-            usuario.departamento = Convert.ToInt32(cmbDepartamento.ValueMember);
-            usuario.tipoUsuario = Convert.ToInt32(cmbTipoUsuario.ValueMember);
+            usuario.departamento = Convert.ToInt32(cmbDepartamento.SelectedValue);
+            usuario.tipoUsuario = Convert.ToInt32(cmbTipoUsuario.SelectedValue);
 
             if (usuario.guardar()) MessageBox.Show("Registro guardado correctamente", "USUARIO", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             else MessageBox.Show("Error al guardar registro, Verifique la informacion", "USUARIO", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);

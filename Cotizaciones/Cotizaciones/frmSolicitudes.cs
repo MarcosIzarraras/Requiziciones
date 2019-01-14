@@ -22,15 +22,15 @@ namespace Cotizaciones
         {
             Solicitud solicitud = new Solicitud();
 
-            solicitud.cotizador = Convert.ToInt32(cmbComprador.ValueMember);
+            solicitud.cotizador = Convert.ToInt32(cmbComprador.SelectedValue);
             solicitud.estatus = 1;
             solicitud.solicitante = Secion.id;
-            solicitud.tipoPedido = Convert.ToInt32(cmbTipoPedido.ValueMember);
+            solicitud.tipoPedido = Convert.ToInt32(cmbTipoPedido.SelectedValue);
 
-            foreach(DataGridViewRow fila in dgvDetalles.Rows)
+            foreach (DataGridViewRow fila in dgvDetalles.Rows)
             {
                 SolicitudDetalle detalle = new SolicitudDetalle();
-                
+
             }
 
             ProcedimientoGuardado.agregarClase(solicitud);
@@ -54,7 +54,7 @@ namespace Cotizaciones
             //CARGAMOS COMPRADORES
             cmbComprador.DisplayMember = "usu_id";
             cmbComprador.ValueMember = "usu_usuario";
-            cmbComprador.DataSource = new Usuario().obtenerCompradores(); 
+            cmbComprador.DataSource = new Usuario().obtenerCompradores();
         }
 
         private void frmSolicitudes_FormClosing(object sender, FormClosingEventArgs e)
@@ -69,10 +69,11 @@ namespace Cotizaciones
 
         private void eliminarFilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            foreach(DataGridViewRow fila in dgvDetalles.SelectedRows)
+            foreach (DataGridViewRow fila in dgvDetalles.SelectedRows)
             {
                 dgvDetalles.Rows.Remove(fila);
-          }
+            }
+        }
         private void btnCancelar_Click(object sender, EventArgs e)
         {
 

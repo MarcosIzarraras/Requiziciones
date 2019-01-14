@@ -17,7 +17,7 @@ namespace Cotizaciones
         }
         public static DataTable obtenerDepartamentos()
         {
-           return Conexion.LeerTabla("select *from departamento");
+           return Conexion.LeerTabla("select dpto_id, dpto_nombre from departamento");
         }
            
     }
