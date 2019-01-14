@@ -14,9 +14,11 @@ namespace Cotizaciones
         public string apellido { get; set; }
         public string usuario { get; set; }
         public string contraseña { get; set; }
+        public string correo { get; set; }
         public int numeroEmpleado { get; set; }
         public int tipoUsuario { get; set; }
         public int departamento { get; set; }
+        public bool activo { get; set; }
         public Usuario()
         {
 
@@ -27,7 +29,7 @@ namespace Cotizaciones
             //usu_id	usu_nombre	usu_apellido	usu_usuario	usu_contrasenia	usu_numeroEmpleado	usu_tipoUsuario_id	usu_departamento_id
             if (verificarDatos())
             {
-                SqlCommand comando = new SqlCommand("INSERT INTO Usuario VALUES (@nombre, @apellido, @usuario, @contraseña, @numeroEmpleado, @tipoUsuario, @departamento)");
+                SqlCommand comando = new SqlCommand("INSERT INTO Usuario VALUES (@nombre, @apellido, @usuario, @contraseña, @numeroEmpleado, @tipoUsuario, @departamento,@correo, @activo)");
                 comando.Parameters.Clear();
                 comando.Parameters.AddWithValue("@nombre", nombre);
                 comando.Parameters.AddWithValue("@apellido", apellido);
@@ -36,6 +38,8 @@ namespace Cotizaciones
                 comando.Parameters.AddWithValue("@numeroEmpleado", numeroEmpleado);
                 comando.Parameters.AddWithValue("@tipoUsuario", tipoUsuario);
                 comando.Parameters.AddWithValue("@departamento", departamento);
+                comando.Parameters.AddWithValue("@correo", correo);
+                comando.Parameters.AddWithValue("@activo", activo);
 
                 completo = Conexion.EjecutarComando(comando);
 
