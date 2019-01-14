@@ -57,7 +57,7 @@ namespace Cotizaciones
         }
         public DataTable obtenerCompradores()
         {
-            SqlCommand comando = new SqlCommand("SELECT usu_id, usu_usuario FROM Usuario WHERE usu_departamento_id = @departamento && usu_tipoUsuario_id = 2");
+            SqlCommand comando = new SqlCommand("SELECT usu_id, usu_usuario FROM Usuario WHERE usu_departamento_id = @departamento AND usu_tipoUsuario_id = 2");
             comando.Parameters.Clear();
             comando.Parameters.AddWithValue("@departamento", Secion.departamento);
 

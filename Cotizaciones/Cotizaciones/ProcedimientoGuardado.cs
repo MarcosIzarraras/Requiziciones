@@ -9,7 +9,7 @@ namespace Cotizaciones
 {
     public static class ProcedimientoGuardado
     {
-        private static List<InterfazClasesBD> listaClases;
+        private static List<InterfazClasesBD> listaClases = new List<InterfazClasesBD>();
         public static bool guardar()
         {
             bool completo = true;

@@ -20,6 +20,8 @@ CREATE TABLE Usuario
 	usu_usuario VARCHAR(50) UNIQUE,
 	usu_contrasenia VARCHAR(50),
 	usu_numeroEmpleado INT,
+	usu_activo BIT,
+	usu_correo VARCHAR(500),
 	usu_tipoUsuario_id INT FOREIGN KEY REFERENCES TipoUsuario(tusu_id),
 	usu_departamento_id INT FOREIGN KEY REFERENCES Departamento(dpto_id)
 )
@@ -43,12 +45,10 @@ CREATE TABLE Solicitud
 CREATE TABLE DetalleSolicitud
 (
 	dsol_id INT IDENTITY (1,1) PRIMARY KEY,
-	dsol_producto VARCHAR(150),
 	dsol_cantidad DECIMAL(10, 4),
 	dsol_rutaDibujo VARCHAR(300),
 	dsol_modelo VARCHAR(300),
 	dsol_descripcion VARCHAR(300),
-	dsol_comentario VARCHAR(500),
 	dsol_estacionTrabajo VARCHAR(200),
 	dsol_urgente BIT,
 	dsol_solicitud_id INT FOREIGN KEY REFERENCES Solicitud(sol_id)

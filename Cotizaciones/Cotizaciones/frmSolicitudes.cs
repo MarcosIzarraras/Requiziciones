@@ -20,23 +20,11 @@ namespace Cotizaciones
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
-            Solicitud solicitud = new Solicitud();
-
-            solicitud.cotizador = Convert.ToInt32(cmbComprador.SelectedValue);
-            solicitud.estatus = 1;
-            solicitud.solicitante = Secion.id;
-            solicitud.tipoPedido = Convert.ToInt32(cmbTipoPedido.SelectedValue);
-
-            foreach (DataGridViewRow fila in dgvDetalles.Rows)
-            {
-                SolicitudDetalle detalle = new SolicitudDetalle();
-
-            }
-
-            ProcedimientoGuardado.agregarClase(solicitud);
-
-            if (solicitud.guardar()) MessageBox.Show("Solicitud guardada correctamente", "SOLICITUDES", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            generarSolicitudGuardar();
+            generarSolicitudDetallesGuardar();
+            if (ProcedimientoGuardado.guardar()) MessageBox.Show("Solicitud guardada correctamente", "SOLICITUDES", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             else MessageBox.Show("Error al guardar solicitud, Verifique la informacion", "SOLICITUDES", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            limpiar();
         }
         private void cargarDatosDefault()
         {
@@ -52,8 +40,8 @@ namespace Cotizaciones
             cmbTipoPedido.DataSource = TipoDePedidos.obtenerDatosPedido();
 
             //CARGAMOS COMPRADORES
-            cmbComprador.DisplayMember = "usu_id";
-            cmbComprador.ValueMember = "usu_usuario";
+            cmbComprador.DisplayMember = "usu_usuario";
+            cmbComprador.ValueMember = "usu_id";
             cmbComprador.DataSource = new Usuario().obtenerCompradores();
         }
 
@@ -64,7 +52,8 @@ namespace Cotizaciones
 
         private void agregarFilaToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            dgvDetalles.Rows.Add();
+            int index = dgvDetalles.Rows.Add();
+            dgvDetalles.Rows[index].Cells["No"].Value = (index + 1);
         }
 
         private void eliminarFilaToolStripMenuItem_Click(object sender, EventArgs e)
@@ -77,6 +66,35 @@ namespace Cotizaciones
         private void btnCancelar_Click(object sender, EventArgs e)
         {
 
+        }
+        private void generarSolicitudGuardar()
+        {
+            Solicitud solicitud = new Solicitud();
+
+            solicitud.cotizador = Convert.ToInt32(cmbComprador.SelectedValue);
+            solicitud.estatus = 1;
+            solicitud.solicitante = Secion.id;
+            solicitud.tipoPedido = Convert.ToInt32(cmbTipoPedido.SelectedValue);
+            ProcedimientoGuardado.agregarClase(solicitud);
+        }
+        private void generarSolicitudDetallesGuardar()
+        {
+            foreach (DataGridViewRow fila in dgvDetalles.Rows)
+            {
+                SolicitudDetalle detalle = new SolicitudDetalle();
+                detalle.cantidad = Convert.ToInt32(fila.Cells["Cantidad"].Value);
+                detalle.descripcion = fila.Cells["Descripcion"].Value.ToString();
+                detalle.estacionTrabajo = fila.Cells["CeldaMaquina"].Value.ToString();
+                detalle.modelo = fila.Cells["Modelo"].Value.ToString();
+                detalle.rutaDibujo = (fila.Cells["Archivo"].Value != null) ? fila.Cells["Archivo"].Value.ToString() : "";
+                detalle.urgente = false;
+
+                ProcedimientoGuardado.agregarClase(detalle);
+            }
+        }
+        private void limpiar()
+        {
+            dgvDetalles.Rows.Clear();
         }
     }
 }

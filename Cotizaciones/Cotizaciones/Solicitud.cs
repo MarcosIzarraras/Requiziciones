@@ -24,7 +24,7 @@ namespace Cotizaciones
             bool completo = false;
             if(verificarCampos())
             {
-                SqlCommand comando = new SqlCommand("INSERT INTO Solicitud VALUES (@fecha, @tipoPeido, @cotizador, @solicitante, @estatus)");
+                SqlCommand comando = new SqlCommand("INSERT INTO Solicitud VALUES (@fecha, @tipoPedido, @cotizador, @solicitante, @estatus)");
                 comando.Parameters.Clear();
                 comando.Parameters.AddWithValue("@fecha", DateTime.Now);
                 comando.Parameters.AddWithValue("@tipoPedido", tipoPedido);
@@ -41,10 +41,10 @@ namespace Cotizaciones
         private bool verificarCampos()
         {
             bool continuar = true;
-            continuar = (continuar) ? tipoPedido == 0 : continuar;
-            continuar = (continuar) ? cotizador == 0 : continuar;
-            continuar = (continuar) ? solicitante == 0 : continuar;
-            continuar = (continuar) ? estatus == 0 : continuar;
+            continuar = (continuar) ? tipoPedido != 0 : continuar;
+            continuar = (continuar) ? cotizador != 0 : continuar;
+            continuar = (continuar) ? solicitante != 0 : continuar;
+            continuar = (continuar) ? estatus != 0 : continuar;
 
             return continuar;
         }
