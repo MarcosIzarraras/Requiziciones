@@ -33,3 +33,4 @@ D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Coti
 D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.exe
 D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.pdb
 D:\Proyectos\Requiziciones\Cotizaciones\Cotizaciones\Cotizaciones\bin\Debug\Microsoft.VisualBasic.PowerPacks.xml
+C:\Users\Carla Macias Aleman\Documents\Sistema de compras\Requiziciones\Cotizaciones\Cotizaciones\obj\Debug\Cotizaciones.frmActivacionUsuario.resources

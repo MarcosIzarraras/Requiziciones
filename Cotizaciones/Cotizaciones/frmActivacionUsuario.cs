@@ -14,7 +14,8 @@ namespace Cotizaciones
     {
         public frmActivacionUsuario()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
-    }
+
+        }
 }
