@@ -91,6 +91,8 @@
     </Compile>
     <Compile Include="Secion.cs" />
     <Compile Include="Solicitud.cs" />
+    <Compile Include="TipoDePedidos.cs" />
+    <Compile Include="Usuario.cs" />
     <EmbeddedResource Include="frmInicioSecion.resx">
       <DependentUpon>frmInicioSecion.cs</DependentUpon>
     </EmbeddedResource>
