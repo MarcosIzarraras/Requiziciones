@@ -27,6 +27,14 @@ namespace Cotizaciones
             solicitud.solicitante = Secion.id;
             solicitud.tipoPedido = Convert.ToInt32(cmbTipoPedido.ValueMember);
 
+            foreach(DataGridViewRow fila in dgvDetalles.Rows)
+            {
+                SolicitudDetalle detalle = new SolicitudDetalle();
+                
+            }
+
+            ProcedimientoGuardado.agregarClase(solicitud);
+
             if (solicitud.guardar()) MessageBox.Show("Solicitud guardada correctamente", "SOLICITUDES", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             else MessageBox.Show("Error al guardar solicitud, Verifique la informacion", "SOLICITUDES", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
         }
@@ -52,6 +60,19 @@ namespace Cotizaciones
         private void frmSolicitudes_FormClosing(object sender, FormClosingEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void agregarFilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            dgvDetalles.Rows.Add();
+        }
+
+        private void eliminarFilaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            foreach(DataGridViewRow fila in dgvDetalles.SelectedRows)
+            {
+                dgvDetalles.Rows.Remove(fila);
+            }
         }
     }
 }

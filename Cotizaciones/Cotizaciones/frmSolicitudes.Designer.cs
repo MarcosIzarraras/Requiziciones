@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.msMenuPrincipal = new System.Windows.Forms.MenuStrip();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearSoicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -55,8 +56,12 @@
             this.lblNumeroEmpleado = new System.Windows.Forms.Label();
             this.lblSolicitante = new System.Windows.Forms.Label();
             this.lblDepartamento = new System.Windows.Forms.Label();
+            this.cmsMenuTabla = new System.Windows.Forms.ContextMenuStrip(this.components);
+            this.agregarFilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.eliminarFilaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.msMenuPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
+            this.cmsMenuTabla.SuspendLayout();
             this.SuspendLayout();
             // 
             // msMenuPrincipal
@@ -211,14 +216,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dgvDetalles.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(77)))), ((int)(((byte)(122)))));
             this.dgvDetalles.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.DimGray;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 8.765218F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.DimGray;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 8.765218F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvDetalles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvDetalles.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDetalles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.No,
@@ -227,14 +232,15 @@
             this.Cantidad,
             this.CeldaMaquina,
             this.Archivo});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 8.765218F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvDetalles.ContextMenuStrip = this.cmsMenuTabla;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 8.765218F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvDetalles.DefaultCellStyle = dataGridViewCellStyle2;
             this.dgvDetalles.GridColor = System.Drawing.Color.Gainsboro;
             this.dgvDetalles.Location = new System.Drawing.Point(35, 267);
             this.dgvDetalles.Margin = new System.Windows.Forms.Padding(0);
@@ -242,13 +248,14 @@
             this.dgvDetalles.MinimumSize = new System.Drawing.Size(750, 150);
             this.dgvDetalles.Name = "dgvDetalles";
             this.dgvDetalles.RowHeadersVisible = false;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(77)))), ((int)(((byte)(122)))));
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.SteelBlue;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.White;
-            this.dgvDetalles.RowsDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(77)))), ((int)(((byte)(122)))));
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.01739F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.SteelBlue;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.dgvDetalles.RowsDefaultCellStyle = dataGridViewCellStyle3;
             this.dgvDetalles.RowTemplate.Height = 24;
+            this.dgvDetalles.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvDetalles.Size = new System.Drawing.Size(750, 150);
             this.dgvDetalles.TabIndex = 23;
             // 
@@ -345,6 +352,28 @@
             this.lblDepartamento.Size = new System.Drawing.Size(0, 25);
             this.lblDepartamento.TabIndex = 28;
             // 
+            // cmsMenuTabla
+            // 
+            this.cmsMenuTabla.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.agregarFilaToolStripMenuItem,
+            this.eliminarFilaToolStripMenuItem});
+            this.cmsMenuTabla.Name = "cmsMenuTabla";
+            this.cmsMenuTabla.Size = new System.Drawing.Size(139, 48);
+            // 
+            // agregarFilaToolStripMenuItem
+            // 
+            this.agregarFilaToolStripMenuItem.Name = "agregarFilaToolStripMenuItem";
+            this.agregarFilaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.agregarFilaToolStripMenuItem.Text = "Agregar Fila";
+            this.agregarFilaToolStripMenuItem.Click += new System.EventHandler(this.agregarFilaToolStripMenuItem_Click);
+            // 
+            // eliminarFilaToolStripMenuItem
+            // 
+            this.eliminarFilaToolStripMenuItem.Name = "eliminarFilaToolStripMenuItem";
+            this.eliminarFilaToolStripMenuItem.Size = new System.Drawing.Size(138, 22);
+            this.eliminarFilaToolStripMenuItem.Text = "Eliminar Fila";
+            this.eliminarFilaToolStripMenuItem.Click += new System.EventHandler(this.eliminarFilaToolStripMenuItem_Click);
+            // 
             // frmSolicitudes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -375,6 +404,7 @@
             this.msMenuPrincipal.ResumeLayout(false);
             this.msMenuPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
+            this.cmsMenuTabla.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -406,5 +436,8 @@
         private System.Windows.Forms.Label lblNumeroEmpleado;
         private System.Windows.Forms.Label lblSolicitante;
         private System.Windows.Forms.Label lblDepartamento;
+        private System.Windows.Forms.ContextMenuStrip cmsMenuTabla;
+        private System.Windows.Forms.ToolStripMenuItem agregarFilaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem eliminarFilaToolStripMenuItem;
     }
 }

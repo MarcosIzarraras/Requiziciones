@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Cotizaciones
 {
-    public class Solicitud
+    public class Solicitud : InterfazClasesBD
     {
         public int id { get; set; }
         public int tipoPedido { get; set; }
