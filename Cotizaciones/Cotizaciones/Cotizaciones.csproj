@@ -52,6 +52,12 @@
   <ItemGroup>
     <Compile Include="Conexion.cs" />
     <Compile Include="Departamento.cs" />
+    <Compile Include="frmActivacionUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmActivacionUsuario.Designer.cs">
+      <DependentUpon>frmActivacionUsuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInicioSecion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -98,6 +104,9 @@
     <Compile Include="TipoDePedidos.cs" />
     <Compile Include="TipoDeUsuario.cs" />
     <Compile Include="Usuario.cs" />
+    <EmbeddedResource Include="frmActivacionUsuario.resx">
+      <DependentUpon>frmActivacionUsuario.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmInicioSecion.resx">
       <DependentUpon>frmInicioSecion.cs</DependentUpon>
     </EmbeddedResource>
