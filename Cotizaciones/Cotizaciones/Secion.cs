@@ -38,5 +38,9 @@ namespace Cotizaciones
 
             return conectado;
         }
+        public static DataTable cargarSolicitudes()
+        {
+            return Conexion.LeerTabla("SELECT sol_id, tPed_nombre FROM Solicitud INNER JOIN tipoPedido ON sol_tipoPedido = tPed_id WHERE sol_cotizador_id = " + Secion.id);
+        }
     }
 }

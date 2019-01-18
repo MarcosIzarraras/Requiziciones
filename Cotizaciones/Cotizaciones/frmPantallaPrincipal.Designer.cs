@@ -33,9 +33,9 @@
             this.msMenuPrincipal = new System.Windows.Forms.MenuStrip();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.crearSoicitudToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.solicitudes0ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolSolicitudes = new System.Windows.Forms.ToolStripMenuItem();
             this.chaGrafica = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblBienvenido = new System.Windows.Forms.Label();
             this.msMenuPrincipal.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chaGrafica)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             this.msMenuPrincipal.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.reportesToolStripMenuItem,
             this.crearSoicitudToolStripMenuItem,
-            this.solicitudes0ToolStripMenuItem});
+            this.toolSolicitudes});
             this.msMenuPrincipal.Location = new System.Drawing.Point(0, 0);
             this.msMenuPrincipal.Name = "msMenuPrincipal";
             this.msMenuPrincipal.Size = new System.Drawing.Size(800, 24);
@@ -71,14 +71,14 @@
             this.crearSoicitudToolStripMenuItem.Text = "Crear Solicitud";
             this.crearSoicitudToolStripMenuItem.Click += new System.EventHandler(this.crearSoicitudToolStripMenuItem_Click);
             // 
-            // solicitudes0ToolStripMenuItem
+            // toolSolicitudes
             // 
-            this.solicitudes0ToolStripMenuItem.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
-            this.solicitudes0ToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.solicitudes0ToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.solicitudes0ToolStripMenuItem.Name = "solicitudes0ToolStripMenuItem";
-            this.solicitudes0ToolStripMenuItem.Size = new System.Drawing.Size(95, 20);
-            this.solicitudes0ToolStripMenuItem.Text = "Solicitudes (0)";
+            this.toolSolicitudes.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.toolSolicitudes.Font = new System.Drawing.Font("Segoe UI Semibold", 8.765218F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolSolicitudes.ForeColor = System.Drawing.Color.White;
+            this.toolSolicitudes.Name = "toolSolicitudes";
+            this.toolSolicitudes.Size = new System.Drawing.Size(95, 20);
+            this.toolSolicitudes.Text = "Solicitudes (0)";
             // 
             // chaGrafica
             // 
@@ -87,7 +87,7 @@
             chartArea1.Name = "ChartArea1";
             this.chaGrafica.ChartAreas.Add(chartArea1);
             this.chaGrafica.Location = new System.Drawing.Point(111, 89);
-            this.chaGrafica.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.chaGrafica.Margin = new System.Windows.Forms.Padding(2);
             this.chaGrafica.Name = "chaGrafica";
             series1.ChartArea = "ChartArea1";
             series1.Name = "Series1";
@@ -98,16 +98,16 @@
             this.chaGrafica.Text = "Proceso";
             this.chaGrafica.Click += new System.EventHandler(this.chaGrafica_Click);
             // 
-            // label1
+            // lblBienvenido
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(294, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(269, 35);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Bienvenido: ____________";
+            this.lblBienvenido.AutoSize = true;
+            this.lblBienvenido.Font = new System.Drawing.Font("Segoe UI", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenido.Location = new System.Drawing.Point(294, 43);
+            this.lblBienvenido.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblBienvenido.Name = "lblBienvenido";
+            this.lblBienvenido.Size = new System.Drawing.Size(269, 35);
+            this.lblBienvenido.TabIndex = 2;
+            this.lblBienvenido.Text = "Bienvenido: ____________";
             // 
             // frmPantallaPrincipal
             // 
@@ -115,12 +115,13 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.lblBienvenido);
             this.Controls.Add(this.chaGrafica);
             this.Controls.Add(this.msMenuPrincipal);
             this.MainMenuStrip = this.msMenuPrincipal;
             this.Name = "frmPantallaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmPantallaPrincipal_FormClosing);
             this.msMenuPrincipal.ResumeLayout(false);
             this.msMenuPrincipal.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.chaGrafica)).EndInit();
@@ -134,8 +135,8 @@
         private System.Windows.Forms.MenuStrip msMenuPrincipal;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem crearSoicitudToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem solicitudes0ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem toolSolicitudes;
         private System.Windows.Forms.DataVisualization.Charting.Chart chaGrafica;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblBienvenido;
     }
 }
