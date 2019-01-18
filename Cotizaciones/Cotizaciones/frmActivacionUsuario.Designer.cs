@@ -36,6 +36,7 @@
             this.Departamento = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Activar = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).BeginInit();
             this.SuspendLayout();
             // 
@@ -62,6 +63,7 @@
             this.dgvDetalles.RowTemplate.Height = 24;
             this.dgvDetalles.Size = new System.Drawing.Size(545, 202);
             this.dgvDetalles.TabIndex = 0;
+            this.dgvDetalles.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDetalles_CellContentClick);
             // 
             // Nombre
             // 
@@ -92,11 +94,21 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 18.15652F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(207, 48);
+            this.label1.Location = new System.Drawing.Point(226, 52);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(289, 40);
             this.label1.TabIndex = 1;
             this.label1.Text = "Activacion de usuario";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(638, 415);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // frmActivacionUsuario
             // 
@@ -104,10 +116,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dgvDetalles);
             this.Name = "frmActivacionUsuario";
             this.Text = "frmActivacionUsuario";
+            this.Load += new System.EventHandler(this.frmActivacionUsuario_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDetalles)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -123,5 +137,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Departamento;
         private System.Windows.Forms.DataGridViewCheckBoxColumn Activar;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button button1;
     }
 }

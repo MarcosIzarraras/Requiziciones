@@ -67,5 +67,9 @@ namespace Cotizaciones
 
             return Conexion.LeerTablaComando(comando);
         }
+        /*public static DataTable cargarUsuario()
+        {
+            return Conexion.LeerTabla("SELECT tusu_id, tusu_nombre FROM TipoUsuario =" + TipoDeUsuario.id);
+        }*/
     }
 }

@@ -35,7 +35,7 @@ namespace Cotizaciones
         {
             this.Hide();
 
-            RegistroUsuario frm = new RegistroUsuario();
+            frmActivacionUsuario frm = new frmActivacionUsuario();
 
             frm.Show();
         }

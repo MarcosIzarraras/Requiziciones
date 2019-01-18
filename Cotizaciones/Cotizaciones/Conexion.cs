@@ -8,7 +8,6 @@ namespace Cotizaciones
 {
     public class Conexion
     {
-
         #region "atributos"
 
         private static string cadenaConexion = "Data Source=SQL5006.site4now.net;Initial Catalog=DB_A4455B_Requisiciones;User Id=DB_A4455B_Requisiciones_admin;Password=Megabanilike1;";
